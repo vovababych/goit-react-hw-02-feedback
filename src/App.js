@@ -13,9 +13,7 @@ class App extends Component {
   feedbackOptions = ['good', 'neutral', 'bad'];
 
   hendleIncrement = feedback => {
-    this.setState(prevState => {
-      this.setState({ [feedback]: prevState[feedback] + 1 });
-    });
+    this.setState(prevState => ({ [feedback]: prevState[feedback] + 1 }));
   };
 
   render() {
